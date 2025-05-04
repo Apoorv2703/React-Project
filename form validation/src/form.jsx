@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 
 let  Form = ()=>{
     let [Name,setName]=useState()
@@ -11,12 +13,12 @@ let  Form = ()=>{
         if(Name && Email && Password && ConfirmPassword){
             
             if(Password === ConfirmPassword){
-                alert("Signup successful")
+                toast.success("Signup successful")
             }else{
-                alert("Err:Password Mismatch")
+                toast.error("Err:Password Mismatch")
             }
         }else{
-            alert("All fields are mandatory")
+            toast.error("All fields are mandatory")
         }
 
     }
