@@ -1,0 +1,35 @@
+{
+    "comments":{
+        "1":{
+            "id":1,
+            "parentID": null,
+            "value":"hello folks",
+            "children":[2,3]
+        },
+        "2":{
+            "id": 2,
+            "parentId":1,
+            "value":"doing greate",
+            "children":[]
+        },
+        "3":{
+            "id":3,
+            "parentID":1,
+            "value":"kat rahi hai zindgi",
+            "children":[4]
+        },
+        "4":{
+            "id":4,
+            "parentID":3,
+            "value":"kya haal hai",
+            "children":[5]
+
+        },
+        "5":{
+            "id":5,
+            "parentID":4,
+            "value":"hi how are you",
+            "children":[]
+        }
+    }
+}
